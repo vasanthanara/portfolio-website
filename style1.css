@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  position: relative;
+  z-index: 1;
+  color: #333;
+}
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #d0f0c0, #e6f7ff, #fff0f5, #f0f8ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.linkedin-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.linkedin-link:hover .linkedin-icon {
+  transform: scale(1.1);
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2e8b57;
+}
+
+.skills ul {
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #e6ffe6;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  background-color: #2e8b57;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
